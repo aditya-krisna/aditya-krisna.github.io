@@ -25,7 +25,11 @@ body{
         "for-pc main-content"
         "for-pc main-content"
         "for-pc footer";
+    background-color: #f3f3f3;
 }
+
+/* -------------FOR DESKTOP DISPLAY------------- */
+
 
 .for-pc {
     height: 100vh;
@@ -33,7 +37,7 @@ body{
     align-self: start ;
     position: sticky;
     grid-area: for-pc;
-    background-image: url(assets/demo-bg.jpeg);
+    background-image: url(assets/KRISNA\ DAN\ ADIT-44.JPG);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -41,23 +45,51 @@ body{
     justify-content: center;
     align-items: flex-start; /* or center */
     padding: 2rem;
+    margin-right: 1rem;
+    filter: grayscale();
 }
 
 .pc-header {
     margin: 2rem 0;
-    padding-top: 70vh;
+    padding-top: 75vh;
+    padding-left: 4rem;
 }
+
+/* -------------MAIN CONTENT------------- */
 
 .main-content {
     grid-area: main-content;
     overflow-y: auto; /* allows scrolling */
+    margin-left: 2px;
+    margin-right: 2px;
 }
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-img {
+    width: 300px;
+    display: block;
+    margin: 0 auto 1rem;
+    padding-top: 25rem;
+}
+
+.hero-section p {
+    margin: 0.5rem 0;
+}
+/* -------------FOOTER------------- */
 
 .footer {
     grid-area: footer;
     padding: 1rem;
     background: #f5f5f5;
     text-align: center;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 @media(max-width: 1000px){
