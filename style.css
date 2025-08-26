@@ -68,7 +68,7 @@ body{
     "galery-content";
     overflow-y: auto; /* allows scrolling */
     margin-left: 2px;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 .hero-section {
