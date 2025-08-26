@@ -104,16 +104,16 @@ body{
     text-align: center;
     margin-left: 5vw;
     margin-right: auto;
-    padding-left: 155px;
-    margin-bottom: 5rem;
-    
+    padding-left: 120px;
+    margin-bottom: 5rem;  
 }
 .recipient h6{
     margin: 2rem ;
+    margin-bottom: 2rem;
     font-size: 1rem;
 }
 .hero-section p {
-    margin: 0.5rem 0rem;
+    margin: 1rem 0rem;
     font-size: 1rem;
 }
 /* -------------PAGE------------- */
@@ -152,5 +152,18 @@ body{
         grid-template-areas:
         "main-content"
         "footer" ;
+    }
+}
+@media(max-width: 430px) {
+    .hero-name {
+        flex-direction: column;  /* stack vertically on very small screens */
+        gap: 0.5rem;
+    }
+    .hero-name p {
+        font-size: 1.125rem; /* scale down */
+    }
+    .hero-date {
+        margin: 2rem 0 4rem;
+        padding: 0;
     }
 }
