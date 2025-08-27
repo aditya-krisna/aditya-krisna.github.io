@@ -114,13 +114,13 @@ body{
 }
 .hero-section p {
     margin: 1rem 0rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
 }
 /* -------------PAGE------------- */
 .page-header {
     display: flex;
     justify-content: space-between;
-    font-size: 0.625rem;
+    font-size: 0.4rem;
 
 }
 
@@ -141,8 +141,8 @@ body{
   display: flex;
   flex-direction: column;
   text-align: justify;   /* centers the text inside each <p> */
-  width: 400px;
-  font-size: 0.6rem;
+  width: 70%;
+  font-size: 0.8rem;
   margin: 0 auto;       /* centers the whole block horizontally */
 }
 
