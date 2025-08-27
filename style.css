@@ -126,6 +126,17 @@ body{
 
 
 /* -------------PAGE1------------- */
+.page1-pic {
+    width: 100px;
+}
+.page1-pic-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto 1rem;
+    padding-top: 25rem;
+    max-width: 100vw; /* optional, keeps things centered nicely */
+}
 
 /* -------------PAGE2------------- */
 /* -------------GALERY HEADER------------- */
