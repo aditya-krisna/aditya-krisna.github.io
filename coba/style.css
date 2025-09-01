@@ -1,0 +1,168 @@
+/* 
+---------color---------
+text-1:#3f2c1e
+text-2:#1f1710
+*/
+
+/* --------------------------GLOBAL-------------------------- */
+:root {
+  --text-1: #1f1710;
+  --text-2: grey;
+  --background: #f3f3f3;
+  --section-marginbottom: 12rem;
+}
+
+html, body {
+  font-size: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+
+body {
+    color:var(--text-1);
+    background-color: var(--background) ;
+}
+
+p {
+  font-size: 1.125rem; /* 18px */
+}
+
+h6 { font-size: 1.375rem; font-style: normal; font-weight: normal; } /* 22px */
+h5 { font-size: 1.5rem; font-style: normal; font-weight: normal;} /* 24px */
+h4 { font-size: 1.625rem; font-style: normal; font-weight: normal;} /* 26px */
+h3 { font-size: 1.750rem; font-style: normal; font-weight: normal;}     /* 28px */
+h2 { font-size: 1.875rem; font-style: normal; font-weight: normal;} /* 30px */
+h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
+
+.main-container {
+    line-height: 1.2;
+    overflow-y: auto;
+    height: 100vh;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge Legacy */
+}
+
+.main-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, newer Edge */
+}
+
+
+/* --------------------------HERO SECTION-------------------------- */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    margin-bottom: var(--section-marginbottom);
+}
+
+.hero-container img {
+    margin-bottom: 2rem;
+    width: 75%;
+}
+
+.hero-text-container {
+    width:  85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-name-date {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rem;
+}
+.hero-name{
+    margin-bottom: 0;
+}
+
+.hero-date {
+    margin: 0;
+    text-align: end;
+}
+
+.hero-recipient{
+    text-align: center;
+    color: var(--text-2);
+    font-weight: 50;
+}
+
+.hero-recipient h4 {
+    margin: 2.5rem;
+}
+
+/* --------------------------DOA SECTION-------------------------- */
+
+.doa-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--section-marginbottom);
+}
+
+.doa-text{
+    text-align: center;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+.doa-container img{
+    width: 100vw;
+    overflow-y: visible;
+    margin-bottom: 6rem;
+}
+.doa-text2 {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.doa-text2 img {
+    width: 40%;
+}
+
+.doa-text2 p {
+    width: 38%;
+    margin-right: 4.5rem;
+}
+
+/* --------------------------PROFILE-------------------------- */
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--section-marginbottom);
+
+}
+
+.profile-container img {
+    width: 75%;
+    margin-bottom: 1.5rem;
+}
+
+.profile-person {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile-text {
+    align-self: flex-start;
+    margin-bottom: 8rem;
+}
+
+.profile-text h2 {
+    margin-bottom: 4px;
+}
+
+.profile-text p {
+    margin-top: 0;
+}

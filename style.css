@@ -142,7 +142,7 @@ body{
   flex-direction: column;
   text-align: justify;   /* centers the text inside each <p> */
   width: 70%;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   margin: 0 auto;       /* centers the whole block horizontally */
 }
 
