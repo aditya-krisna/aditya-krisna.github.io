@@ -130,6 +130,7 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 
 .doa-text2 p {
     width: 38%;
+    margin-left: -5rem;
     margin-right: 4.5rem;
 }
 
@@ -238,5 +239,74 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
     z-index: 1;
     position: relative;
     bottom: 3rem;
+}
+
+/* --------------------------Galeri Header-------------------------- */
+.galeri-tabel {
+    display: grid;
+    grid-template-areas: 
+    "header-left galeri header-right";
+    grid-template-columns: 0.5fr 9fr 0.5fr;
+    width: 100%;
+}
+
+.header-left {
+    grid-area: header-left;
+}
+
+.header-right {
+    grid-area: header-right;
+}
+
+.galeri {
+    grid-area: galeri;
+}
+
+.header-left, .header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+}
+
+.header-right p {
+    writing-mode: vertical-rl;
+    margin-bottom: 17.5rem;
+    margin-right: 0;
+}
+
+.header-left p {
+    writing-mode: vertical-rl;
+    position: relative;
+    transform: rotate(180deg);
+    margin-bottom: 20rem;
+    margin-left: 0.5rem;
+}
+
+.header-container {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+/* --------------------------Galeri Content-------------------------- */
+.galeri-content img{
+    width: 80%;
+}
+
+.galeri-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.content-1, .content-2, .content-3,
+.content-4, .content-5, .content-6,
+.content-7, .content-8, .content-9 {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
