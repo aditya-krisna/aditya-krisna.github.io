@@ -291,7 +291,7 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 
 /* --------------------------Galeri Content-------------------------- */
 .galeri-content img{
-    width: 80%;
+    width: 75%;
 }
 
 .galeri-content{
@@ -307,6 +307,6 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 .content-7, .content-8, .content-9 {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 90%;
 }
 
