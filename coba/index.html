@@ -80,19 +80,20 @@
             </div>
         </div>  
         <div class="galeri-tabel">
-            <div class="header-left">
+            <div class="header-container">
+                 <div class="header-left">
                 <p>KRISNA</p>
                 <p>ADITYA . KRISNA</p>
-                <p style="margin-bottom: 10rem;">ADITYA</p>
-                <p>KRISNA</p>
-                <p>ADITYA . KRISNA</p>  
-                <p style="margin-bottom: 10rem;">ADITYA</p>
-                <p>KRISNA</p>
-                <p>ADITYA . KRISNA</p>
-                <p style="margin-bottom: 10rem;">ADITYA</p>
+                <p>ADITYA</p>
             </div>
+            </div>
+
             <div class="galeri">
-                <div class="galeri-header"></div>
+                    <div class="galeri-title__card">
+                        <img src="assets/galeri-header.jpg" alt="" style="width: 40%;">
+                        <h5>GALERI</h5>
+                    </div>
+
                 <div class="galeri-content">
                     <div class="content-1">
                         <img src="assets/black.png" alt="" style="width: 40%;">
@@ -159,19 +160,22 @@
                     <img src="assets/output_prefix-045.jpg" alt="">
                 </div>
             </div>
-            <div class="header-right">
+            <div class="header-container">
+                <div class="header-right">
                 <p>OKTOBER</p>
                 <p>PERNIKAHAN . SELAMANYA</p>
-                <p style="margin-bottom: 10rem;">2025</p>
-                <p>OKTOBER</p>
-                <p>PERNIKAHAN . SELAMANYA</p>
-                <p style="margin-bottom: 10rem;">2025</p>
-                <p>OKTOBER</p>
-                <p>PERNIKAHAN . SELAMANYA</p>
-                <p style="margin-bottom: 10rem;">2025</p>    
+                <p>2025</p>
             </div>
-        </div>     
-    </div>
 
+            </div>
+        </div>   
+        <div id="lightbox" class="lb hidden" role="dialog" aria-modal="true" aria-label="Image viewer" tabindex="-1">
+            <button class="lb__btn lb__close" aria-label="Close (Esc)">×</button>
+            <button class="lb__btn lb__prev" aria-label="Previous (←)">❮</button>
+            <img class="lb__img" alt="">
+            <button class="lb__btn lb__next" aria-label="Next (→)">❯</button>
+        </div>  
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
