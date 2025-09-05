@@ -87,3 +87,18 @@
     startX = null;
   }, { passive: true });
 })();
+
+// open undangan//
+const overlay = document.getElementById('overlay');
+const hideBtn  = document.getElementById('hide');
+
+const music = new Audio('assets/Lomba Sihir - Ribuan Memori (Official Lyric Video) (320).mp3');
+music.preload = 'auto';
+music.loop = true;
+
+hideBtn.addEventListener('click', async () => {
+  overlay.setAttribute('aria-hidden', 'true');   // hides via CSS
+  document.body.classList.remove('no-scroll');   // re-enable scroll
+  try { await music.play(); } catch (e) { console.error(e); }
+});
+
