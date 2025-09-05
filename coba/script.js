@@ -98,7 +98,7 @@ music.loop = true;
 
 hideBtn.addEventListener('click', async () => {
   overlay.setAttribute('aria-hidden', 'true');   // hides via CSS
-  document.body.classList.remove('no-scroll');   // re-enable scroll
+  document.body.style.overflowY = '';
   try { await music.play(); } catch (e) { console.error(e); }
 });
 
