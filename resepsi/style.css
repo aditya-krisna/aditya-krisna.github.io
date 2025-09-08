@@ -500,5 +500,15 @@ html, body { margin: 0; }
   border-radius: 2rem;
   padding: 3rem 5rem;
   max-width: 90vw;
-  
 }
+
+.overlayText {
+    transition: opacity 1.5s linear;
+    transition-behavior: allow-discrete;
+}
+
+.disappear-slowly {
+  opacity: 0;
+}
+
+
