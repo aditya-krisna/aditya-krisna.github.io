@@ -9,7 +9,13 @@ text-2:#1f1710
   --text-1: #1f1710;
   --text-2: grey;
   --background: #f3f3f3;
-  --section-marginbottom: 12rem;
+  --section-marginbottom: 15rem;
+}
+
+@media(min-width:390px) {
+    :root {
+    --section-marginbottom: 28rem;
+    } 
 }
 
 html, body {
@@ -32,13 +38,14 @@ p {
   font-size: 1.125rem; /* 18px */
 }
 
-h6 { font-size: 1.375rem; font-style: normal; font-weight: normal; letter-spacing: 0.175rem; } /* 22px */
-h5 { font-size: 1.5rem; font-style: normal; font-weight: normal; letter-spacing: 0.175rem} /* 24px */
-h4 { font-size: 1.625rem; font-style: normal; font-weight: normal; letter-spacing: 0.175rem} /* 26px */
-h3 { font-size: 1.750rem; font-style: normal; font-weight: normal; letter-spacing: 0.175rem}     /* 28px */
-h2 { font-size: 1.875rem; font-style: normal; font-weight: normal;letter-spacing: 0.175rem} /* 30px */
-h1 { font-size: 2rem; font-style: normal; font-weight: normal; letter-spacing: 0.175rem}     /* 32px */
-p {letter-spacing: 0.175rem}
+h6 { font-size: 1.375rem; font-style: normal; font-weight: normal; letter-spacing: 0.125rem; opacity: 0.65; } /* 22px */
+h5 { font-size: 1.5rem; font-style: normal; font-weight: normal; letter-spacing: 0.125rem;opacity: 0.65} /* 24px */
+h4 { font-size: 1.625rem; font-style: normal; font-weight: normal; letter-spacing: 0.125rem;opacity: 0.65} /* 26px */
+h3 { font-size: 1.750rem; font-style: normal; font-weight: normal; letter-spacing: 0.125rem;opacity: 0.65}     /* 28px */
+h2 { font-size: 1.875rem; font-style: normal; font-weight: normal;letter-spacing: 0.125rem;opacity: 0.65} /* 30px */
+h1 { font-size: 2rem; font-style: normal; font-weight: normal; letter-spacing: 0.125rem;opacity: 0.65}     /* 32px */
+p {letter-spacing: 0.175rem; opacity: 0.65;}
+
 
 .main-container {
     /* line-height: 1.2;
@@ -71,6 +78,14 @@ p {letter-spacing: 0.175rem}
     margin-top: 10vh;
     margin-bottom: var(--section-marginbottom);
 }
+
+@media(min-width:900px) {
+    .hero-container {
+        margin-top: 13vh;
+    }
+}
+
+
 
 .hero-container img {
     margin-bottom: 2rem;
