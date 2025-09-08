@@ -73,13 +73,15 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 
 .hero-container img {
     margin-bottom: 2rem;
-    width: 75%;
+    width: 70%;
 }
 
 .hero-text-container {
     width:  85%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
 }
 
@@ -120,29 +122,34 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 .doa-text{
     text-align: center;
     width: 80%;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+    letter-spacing: 0.175rem;
 }
 
 .doa-container img{
     width: 100vw;
     max-width: 600px;
     overflow-y: visible;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
 }
 .doa-text2 {
-    width: 80%;
+    width: 65%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .doa-text2 img {
     width: 40%;
+    margin-bottom: 2rem;
 }
 
 .doa-text2 p {
-    width: 40%;
-    margin-left: .5rem;
-    margin-right: 3rem;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 0.175rem;
+
 }
 
 /* --------------------------PROFILE-------------------------- */
@@ -171,8 +178,9 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 }
 
 .profile-text {
-    align-self: flex-start;
+    align-self: center;
     margin-bottom: 8rem;
+    text-align: center;
 }
 
 .profile-text h2 {
@@ -181,6 +189,7 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 
 .profile-text p {
     margin-top: 0;
+    font-size: 1.25rem;
 }
 
 /* --------------------------ALAMAT-------------------------- */
@@ -199,6 +208,7 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 .card {
     display: flex;
     position: relative;
+    flex-direction: column;
     justify-content: space-between;
     width: 75%;
     align-items: center;
@@ -208,12 +218,12 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
 }
 
 .card__img {
-  width: 70%;
+  width: 65%;
   height: auto;
 }
 
 
-.card__text {
+/* .card__text {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -260,7 +270,7 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
     z-index: 1;
     position: relative;
     bottom: 3rem;
-}
+} */
 
 /* --------------------------Galeri Header-------------------------- */
 .galeri-tabel {
@@ -342,7 +352,7 @@ h1 { font-size: 2rem; font-style: normal; font-weight: normal;}     /* 32px */
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: var(--section-marginbottom);
+    margin-bottom: 18rem;
 
 }
 
@@ -436,7 +446,7 @@ html, body { margin: 0; }
   display: flex;            /* hide -> page scrolls */
   justify-content: center;
   align-items: center;      /* center the box */
-  background: rgba(0,0,0,.80);
+  background: #f3f3f3;
   overscroll-behavior: none;/* prevent scroll chaining */
   touch-action: none;       /* nicer on mobile */
 }
@@ -444,21 +454,14 @@ html, body { margin: 0; }
 
 .overlay h1 {
     font-size: 3rem;
-    color: var(--background);
-    font-weight: 800;
     margin-bottom: 0.5rem;
 }
 
 .overlay button {
-    padding: 1.5rem 3.6rem;
-    border-radius: 3rem;
-    font-weight: 800;
+    border: none;
     background-color: var(--background);
 }
 
-.overlay button:hover {
-    background-color: #c8c8c8;
-}
 
 .overlay-box {
     text-align: center;

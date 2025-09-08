@@ -97,8 +97,10 @@ music.preload = 'auto';
 music.loop = true;
 
 hideBtn.addEventListener('click', async () => {
-  overlay.setAttribute('aria-hidden', 'true');   // hides via CSS
+  // overlay.setAttribute('aria-hidden', 'true');   // hides via CSS
+  overlay.style.display = 'none'
   document.body.style.overflowY = '';
+
   try { await music.play(); } catch (e) { console.error(e); }
 });
 
