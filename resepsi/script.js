@@ -102,13 +102,17 @@ music.preload = 'auto';
 music.loop = true;
 
 hideBtn.addEventListener('click', async () => {
+  const delay = ms => new Promise(res=> setTimeout(res, ms))
+
   document.querySelectorAll('.overlayText').forEach(el => {
     el.classList.add('disappear-slowly')
   })
-  
-  const delay = ms => new Promise(res=> setTimeout(res, ms))
 
-  await delay(2000)
+  await delay(1500)
+  overlay.classList.add('disappear-slowly')
+
+
+  await delay(3000)
   overlay.style.display = 'none'
   document.body.style.overflowY = '';
   muteBtn.style.display = ''

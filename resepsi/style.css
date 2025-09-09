@@ -10,11 +10,14 @@ text-2:#1f1710
   --text-2: grey;
   --background: #f3f3f3;
   --section-marginbottom: 15rem;
+  --section-marginbottom2: 10rem
 }
+
 
 @media(min-width:390px) {
     :root {
     --section-marginbottom: 28rem;
+    --section-marginbottom2:20rem;
     } 
 }
 
@@ -32,6 +35,7 @@ html, body {
 body {
     color:var(--text-1);
     background-color: var(--background) ;
+    font-family: 'Forum', serif;
 }
 
 p {
@@ -132,7 +136,7 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--section-marginbottom);
+    margin-bottom: var(--section-marginbottom2);
 }
 
 .doa-text{
@@ -143,7 +147,8 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
 }
 
 .doa-container img{
-    width: 100vw;
+    width: 80%;
+    /* width: 100vw; */
     max-width: 600px;
     overflow-y: visible;
     margin-bottom: 4rem;
@@ -175,7 +180,7 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--section-marginbottom);
+    margin-bottom: var(--section-marginbottom2);
 
 }
 
@@ -195,7 +200,7 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
 
 .profile-text {
     align-self: center;
-    margin-bottom: 8rem;
+    /* margin-bottom: 8rem; */
     text-align: center;
 }
 
@@ -319,11 +324,12 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
     top: 0;
     flex-direction: column;
     gap: 5rem;
-    padding-top: 10rem;
+    padding-top: 3rem;
 }
 @media(min-width:360px) {
   .header-left, .header-right {
-    gap: 10rem;
+    gap: 6rem;
+    padding-top: 10rem;
 }  
 }
 
@@ -336,7 +342,7 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
 .header-right p {
     writing-mode: vertical-rl;
     margin-bottom: 17.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.525rem;
     font-size: 0.8rem;
 }
 
@@ -379,7 +385,7 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
     width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 18rem;
+    margin-bottom: var(--section-marginbottom);
 
 }
 
@@ -478,8 +484,9 @@ color: white;
   opacity: 0.90;
   overscroll-behavior: none;/* prevent scroll chaining */
   touch-action: none;       /* nicer on mobile */
+  transition: opacity 1.5s eas;
+
 }
-.overlay[aria-hidden="true"] {display: none;}
 
 .overlay h1 {
     font-size: 3rem;
@@ -490,6 +497,7 @@ color: white;
     border: none;
     background-color: black ;
     color: white;
+
 }
 
 
@@ -507,7 +515,6 @@ color: white;
 
 .overlayText {
     transition: opacity 1.5s linear;
-    transition-behavior: allow-discrete;
 }
 
 .disappear-slowly {
