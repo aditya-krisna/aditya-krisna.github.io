@@ -484,7 +484,7 @@ color: white;
   opacity: 0.90;
   overscroll-behavior: none;/* prevent scroll chaining */
   touch-action: none;       /* nicer on mobile */
-  transition: opacity 1.5s eas;
+  transition: opacity 2s ease-in;
 
 }
 

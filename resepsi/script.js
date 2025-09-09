@@ -112,7 +112,7 @@ hideBtn.addEventListener('click', async () => {
   overlay.classList.add('disappear-slowly')
 
 
-  await delay(3000)
+  await delay(2000)
   overlay.style.display = 'none'
   document.body.style.overflowY = '';
   muteBtn.style.display = ''
