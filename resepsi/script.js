@@ -92,6 +92,10 @@
 const overlay = document.getElementById('overlay');
 const hideBtn  = document.getElementById('hide');
 const overlayText = document.querySelectorAll('#overlayText')
+const mainContainer = document.querySelector('#mainContainer')
+const muteBtn = document.getElementById('muteBtn');
+const muteIcon = document.getElementById('muteIcon')
+
 
 const music = new Audio('assets/Lomba Sihir - Ribuan Memori (Official Lyric Video) (320).mp3');
 music.preload = 'auto';
@@ -107,7 +111,13 @@ hideBtn.addEventListener('click', async () => {
   await delay(2000)
   overlay.style.display = 'none'
   document.body.style.overflowY = '';
+  muteBtn.style.display = ''
 
   try { await music.play(); } catch (e) { console.error(e); }
 });
 
+
+muteBtn.addEventListener('click', () => {
+  music.muted = !music.muted;
+  muteIcon.src = music.muted ? 'assets/mute.png' : 'assets/unmute.png'
+});

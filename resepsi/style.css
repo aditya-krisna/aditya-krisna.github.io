@@ -318,18 +318,18 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
     position: sticky;
     top: 0;
     flex-direction: column;
-    gap: 10rem;
-    padding-top: 3rem;
+    gap: 5rem;
+    padding-top: 10rem;
 }
 @media(min-width:360px) {
   .header-left, .header-right {
-    gap: 15rem;
+    gap: 10rem;
 }  
 }
 
 @media(min-width:550px) {
   .header-left, .header-right {
-    gap: 20rem;
+    gap: 15rem;
 }  
 }
 
@@ -465,6 +465,7 @@ html, body { margin: 0; }
 
 /* the blocker */
 .overlay {
+color: white;
   position: fixed;
   inset: 0;
   width: 100vw;
@@ -473,7 +474,8 @@ html, body { margin: 0; }
   display: flex;            /* hide -> page scrolls */
   justify-content: center;
   align-items: center;      /* center the box */
-  background: #f3f3f3;
+  background: black;
+  opacity: 0.90;
   overscroll-behavior: none;/* prevent scroll chaining */
   touch-action: none;       /* nicer on mobile */
 }
@@ -486,7 +488,8 @@ html, body { margin: 0; }
 
 .overlay button {
     border: none;
-    background-color: var(--background);
+    background-color: black ;
+    color: white;
 }
 
 
@@ -509,6 +512,19 @@ html, body { margin: 0; }
 
 .disappear-slowly {
   opacity: 0;
+}
+
+.mute-btn {
+  position: fixed;
+  bottom: 7.5px;
+  right: 7.5px;
+  z-index: 9999;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer; 
+  background-color: #f3f3f3;
+  opacity: 0.4;
 }
 
 
