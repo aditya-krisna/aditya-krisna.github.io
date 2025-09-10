@@ -141,3 +141,20 @@ const observer = new IntersectionObserver((entries) => {
 
 const galeriImg = document.querySelectorAll('.galeri-content img, .section')
 galeriImg.forEach(el => observer.observe(el))
+
+// recipient
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  var el = document.getElementById('recipient');
+  if (!el) { console.warn('[recipient] element not found'); return; }
+
+  var params = new URLSearchParams(window.location.search);
+  var name = params.get('to');
+
+  if (name) {
+    try { name = decodeURIComponent(name.replace(/\+/g, ' ')); } catch (e) {}
+    name = name.trim();
+    if (name) el.textContent = name;
+  }
+});
