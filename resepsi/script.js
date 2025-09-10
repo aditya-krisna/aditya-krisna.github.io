@@ -102,6 +102,7 @@ music.preload = 'auto';
 music.loop = true;
 
 hideBtn.addEventListener('click', async () => {
+  try { await music.play(); } catch (e) { console.error(e); }
   const delay = ms => new Promise(res=> setTimeout(res, ms))
 
   document.querySelectorAll('.overlayText').forEach(el => {
@@ -110,16 +111,15 @@ hideBtn.addEventListener('click', async () => {
 
   await delay(1500)
   overlay.classList.add('disappear-slowly')
-
-
+  
+  
   await delay(2000)
   overlay.style.display = 'none'
   document.body.style.overflowY = '';
   muteBtn.style.display = ''
-
-  try { await music.play(); } catch (e) { console.error(e); }
+  
 });
-
+  
 
 muteBtn.addEventListener('click', () => {
   music.muted = !music.muted;

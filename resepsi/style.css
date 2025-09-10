@@ -244,7 +244,9 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
 }
 
 
-
+.card a {
+    text-decoration: none; color: inherit; cursor: pointer;
+}
 
 
 /* .card__text {
