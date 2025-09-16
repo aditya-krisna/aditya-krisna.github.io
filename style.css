@@ -52,11 +52,6 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
 
 
 .main-container {
-    /* line-height: 1.2;
-    overflow-y: auto;
-    height: 100vh;
-    scrollbar-width: none; /* Firefox */
-    /* -ms-overflow-style: none;  */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,9 +61,6 @@ p {letter-spacing: 0.175rem; opacity: 0.65;}
     margin-right: auto;
 }
 
-.main-container::-webkit-scrollbar {
-  /* display: none; Chrome, Safari, newer Edge */
-}
 
 .main-container img {
     opacity: 0.85;
@@ -525,8 +517,8 @@ color: white;
 
 .mute-btn {
   position: fixed;
-  bottom: 7.5px;
-  right: 7.5px;
+  bottom: 20px;
+  right: 5rem;
   z-index: 9999;
   padding: .5rem 1rem;
   border: none;

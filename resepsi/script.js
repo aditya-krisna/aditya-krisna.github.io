@@ -97,7 +97,7 @@ const muteBtn = document.getElementById('muteBtn');
 const muteIcon = document.getElementById('muteIcon')
 
 
-const music = new Audio('../assets/So This is Love (from Cinderella) - Emile Pandolfi.mp3');
+const music = new Audio('../assets/Turning Page (Instrumental).mp3');
 music.preload = 'auto';
 music.loop = true;
 
@@ -123,7 +123,7 @@ hideBtn.addEventListener('click', async () => {
 
 muteBtn.addEventListener('click', () => {
   music.muted = !music.muted;
-  muteIcon.src = music.muted ? 'assets/mute.png' : 'assets/unmute.png'
+  muteIcon.src = music.muted ? '../assets/mute.png' : '../assets/unmute.png'
 });
 
 

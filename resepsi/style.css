@@ -525,8 +525,8 @@ color: white;
 
 .mute-btn {
   position: fixed;
-  bottom: 7.5px;
-  right: 7.5px;
+  bottom: 20px;
+  right: 5rem;
   z-index: 9999;
   padding: .5rem 1rem;
   border: none;

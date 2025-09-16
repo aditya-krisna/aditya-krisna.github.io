@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <title>Pawiwahan Aditya . Krisna</title>
 </head>
-<button id="muteBtn" class="mute-btn" style="display: none;"><img id="muteIcon" style="width: 15px;" src="assets/unmute.png" alt=""></button>
 <body style="overflow-y:hidden ;"> 
     <div id="overlay" class="overlay" role="dialog" aria-modal="true" style="display: flex;">
         <div class="overlay-box">
@@ -21,7 +20,8 @@
             <button class="overlayText" id="hide" style="margin-top: 5rem; letter-spacing: 0.5rem; font-size: 2.5rem; font-family: 'Forum', serif;">BUKA UNDANGAN</button>
         </div>
     </div>
-    <div id="mainContainer" class="main-container" id="mainContainer">
+    <div id="mainContainer" class="main-container" id="mainContainer" style="position: relative;">
+        <button id="muteBtn" class="mute-btn" style="display: none;"><img id="muteIcon" style="width: 15px;" src="../assets/unmute.png" alt=""></button>
         <div class="hero-container">
             <img src="../assets/output_prefix-002.jpg" alt="" width="100%">
             <div class="hero-text-container">
@@ -138,7 +138,7 @@
                     <img class="section-left" src="../assets/galeri-content/galeri-12.jpg" alt="">
                     <img class="section-right" src="../assets/galeri-content/galeri-13.jpg" alt="" style="width: 40%;">
                     <img class="section-left" src="../assets/galeri-content/galeri-14.jpg" alt="" style="width: 40%;">
-                    <img class="section-right" src="assets/galeri-content/galeri-15.jpg" alt="">
+                    <img class="section-left" src="../assets/galeri-content/galeri-15.jpg" alt="">
                     <img class="section-left" src="../assets/galeri-content/galeri-16.jpg" alt="">
                     <img class="section-right" src="../assets/galeri-content/galeri-17.jpg" alt="">
                     <div class="content-5 section">
@@ -173,6 +173,9 @@
                     </div>    
                     <img class="section-left" src="../assets/galeri-content/galeri-23.jpg" alt="" style="margin: var(--section-marginbottom) 0;">
                 </div>
+            <div class="footer" style="text-align: center;">
+                <p>©  2025 <a href="https://www.instagram.com/brotot.ir?igsh=MWgwbTlsYjhzMmJ0ZQ==">BROTOT</a> | Developed by <a href="https://wa.me/6287722479025">Idam Bali Haryono</a></p>
+            </div>
             </div>
             <div class="header-container">
                 <div class="header-right">
@@ -182,9 +185,6 @@
             </div>
 
             </div>
-        </div>
-        <div class="footer">
-            <p>©  2025 <a href="https://www.instagram.com/brotot.ir?igsh=MWgwbTlsYjhzMmJ0ZQ==">BROTOT</a> | Developed by <a href="https://wa.me/6287722479025">Idam Bali Haryono</a></p>
         </div>
    
         <div id="lightbox" class="lb hidden" role="dialog" aria-modal="true" aria-label="Image viewer" tabindex="-1">
